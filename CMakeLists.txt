@@ -12,11 +12,11 @@ set(QT_PREFIX_RELEASE "D:/Library/MSVC_2022/x64_Static_Release_MT")
 
 if (MSVC)
     if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-        message(STATUS "Configuring Debug build with shared Qt...")
+        #message(STATUS "Configuring Debug build with shared Qt...")
         set(CMAKE_PREFIX_PATH ${QT_PREFIX_DEBUG})
         set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreadedDebugDLL) # MDd
     else()
-        message(STATUS "Configuring Release build with static Qt...")
+        #message(STATUS "Configuring Release build with static Qt...")
         set(CMAKE_PREFIX_PATH ${QT_PREFIX_RELEASE})
         set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreaded) # MT
         set(CMAKE_EXE_LINKER_FLAGS "-static")
