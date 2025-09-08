@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="QtSettings">
-    <option name="myCurrentProfile" value="ReleaseVisualStudio" />
+    <option name="myCurrentProfile" value="DebugVisualStudio" />
     <option name="mySettingsPerProfile">
       <map>
-        <entry key="Debug">
-          <value>
-            <PerProfileState>
-              <option name="myQmlPath" value="$PROJECT_DIR$/../../Library/MSVC_2022/x64_Static_Release_MT/qml" />
-              <option name="myQtBinPath" value="$PROJECT_DIR$/../../Library/MSVC_2022/x64_Static_Release_MT/bin" />
-            </PerProfileState>
-          </value>
-        </entry>
         <entry key="DebugVisualStudio">
           <value>
             <PerProfileState>
