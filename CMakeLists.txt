@@ -15,7 +15,11 @@ find_package(Qt6 COMPONENTS
         Concurrent
         REQUIRED)
 set(CMAKE_EXE_LINKER_FLAGS "-static")
-set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreaded)
+if(MSVC)
+    if(CMAKE_BUILD_TYPE STREQUAL "Release")
+        set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreaded)
+    endif()
+endif()
 add_executable(0908_test2 main.cpp)
 set_target_properties(0908_test2 PROPERTIES
         WIN32_EXECUTABLE TRUE
